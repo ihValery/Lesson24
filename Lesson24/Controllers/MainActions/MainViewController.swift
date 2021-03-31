@@ -1,7 +1,5 @@
 import UIKit
 
-//Подпишем перечисление к стрингу, дабы задать красивое отображение на кнопках ))
-//CaseIterable позволяет из перечисления сделать массив, для дальнейшей работы
 enum UserActions: String, CaseIterable
 {
     case downloadImage = "Download Image"
@@ -10,7 +8,6 @@ enum UserActions: String, CaseIterable
 
 class MainViewController: UICollectionViewController
 {
-    //Массив наших Actions из всех case
     private let userActions = UserActions.allCases
     
     override func viewDidLoad()
@@ -23,10 +20,9 @@ class MainViewController: UICollectionViewController
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
-        if segue.identifier == "Users" {
-            let usersVC = segue.destination as! UsersVC
-            usersVC.fetchData()
-        }
+        guard segue.identifier == "Users" else { return }
+        let usersVC = segue.destination as! UsersVC
+        usersVC.fetchData()
     }
     
     // MARK: - UICollectionViewDataSource
