@@ -37,10 +37,10 @@
             </objects>
             <point key="canvasLocation" x="-1287" y="84"/>
         </scene>
-        <!--Alamofire-->
+        <!--Alamofire + S.O.L.I.D.-->
         <scene sceneID="4mG-AO-SA9">
             <objects>
-                <collectionViewController id="Vdh-ny-3rE" customClass="MainViewController" customModule="Lesson18" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController id="Vdh-ny-3rE" customClass="MainViewController" customModule="Lesson24" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="5te-oO-Ivu">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -56,7 +56,7 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="UserActionCell" id="Jvr-fs-umn" customClass="UserActionCell" customModule="Lesson18" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="UserActionCell" id="Jvr-fs-umn" customClass="UserActionCell" customModule="Lesson24" customModuleProvider="target">
                                 <rect key="frame" x="25.666666666666668" y="0.0" width="339" height="143"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="uPf-Go-wtN">
@@ -92,7 +92,7 @@
                             <outlet property="delegate" destination="Vdh-ny-3rE" id="CeD-uW-zf7"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" title="Alamofire" id="FBJ-ZB-vmn"/>
+                    <navigationItem key="navigationItem" title="Alamofire + S.O.L.I.D." id="FBJ-ZB-vmn"/>
                     <connections>
                         <segue destination="LSb-bE-6Ym" kind="show" identifier="ShowImage" id="bj3-fR-IaK"/>
                         <segue destination="cio-gh-8jD" kind="show" identifier="Users" id="A9a-LN-hUs"/>
@@ -105,7 +105,7 @@
         <!--UsersVC-->
         <scene sceneID="eWh-2e-gGb">
             <objects>
-                <tableViewController id="cio-gh-8jD" customClass="UsersVC" customModule="Lesson18" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="cio-gh-8jD" customClass="UsersVC" customModule="Lesson24" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="LZ4-Mq-Mbs">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -127,7 +127,7 @@
         <!--Image View Controller-->
         <scene sceneID="HFn-XN-01E">
             <objects>
-                <viewController id="LSb-bE-6Ym" customClass="ImageViewController" customModule="Lesson18" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="LSb-bE-6Ym" customClass="ImageViewController" customModule="Lesson24" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AYo-hF-BX6">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -185,7 +185,7 @@
         <!--Details-->
         <scene sceneID="tKu-ha-0ZB">
             <objects>
-                <viewController id="K6R-EK-uRp" customClass="DetailViewController" customModule="Lesson18" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="K6R-EK-uRp" customClass="DetailViewController" customModule="Lesson24" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Fgk-mw-S37">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -362,7 +362,7 @@
                                     <constraint firstItem="JVd-mg-PD6" firstAttribute="top" secondItem="2Bw-Ig-R1P" secondAttribute="top" id="xk9-cI-lVD"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mpg-s2-en1">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mpg-s2-en1">
                                 <rect key="frame" x="25" y="747" width="340" height="38"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
@@ -373,39 +373,14 @@
                                     <segue destination="RL5-W5-h2x" kind="show" identifier="goToPosts" id="Cg5-Ty-nfc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="syh-tp-8Nt">
-                                <rect key="frame" x="25" y="694" width="340" height="38"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
-                                <state key="normal" title="Albums">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="hh2-qm-cSr" kind="show" identifier="goToAlbums" id="pS2-Zs-aFc"/>
-                                </connections>
-                            </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zKT-Ws-Zcs">
-                                <rect key="frame" x="25" y="641" width="340" height="38"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
-                                <state key="normal" title="ToDo list">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Jhj-wD-27r"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Jhj-wD-27r" firstAttribute="trailing" secondItem="syh-tp-8Nt" secondAttribute="trailing" constant="25" id="4BS-em-fcr"/>
                             <constraint firstItem="Jhj-wD-27r" firstAttribute="trailing" secondItem="Mpg-s2-en1" secondAttribute="trailing" constant="25" id="4yW-0v-KWw"/>
-                            <constraint firstItem="syh-tp-8Nt" firstAttribute="leading" secondItem="Jhj-wD-27r" secondAttribute="leading" constant="25" id="JSK-sj-XDq"/>
                             <constraint firstItem="Mpg-s2-en1" firstAttribute="leading" secondItem="Jhj-wD-27r" secondAttribute="leading" constant="25" id="LRp-fP-Qgv"/>
-                            <constraint firstItem="Jhj-wD-27r" firstAttribute="trailing" secondItem="zKT-Ws-Zcs" secondAttribute="trailing" constant="25" id="SLR-bb-nex"/>
-                            <constraint firstItem="syh-tp-8Nt" firstAttribute="top" secondItem="zKT-Ws-Zcs" secondAttribute="bottom" constant="15" id="Vvg-7X-0Dv"/>
-                            <constraint firstItem="zKT-Ws-Zcs" firstAttribute="leading" secondItem="Jhj-wD-27r" secondAttribute="leading" constant="25" id="Xdb-Yi-Fa4"/>
                             <constraint firstItem="Jhj-wD-27r" firstAttribute="bottom" secondItem="Mpg-s2-en1" secondAttribute="bottom" constant="25" id="a5K-Sd-Uhx"/>
                             <constraint firstItem="2Bw-Ig-R1P" firstAttribute="top" secondItem="Jhj-wD-27r" secondAttribute="top" constant="50" id="czb-pG-ssu"/>
-                            <constraint firstItem="Mpg-s2-en1" firstAttribute="top" secondItem="syh-tp-8Nt" secondAttribute="bottom" constant="15" id="uzu-0I-lrW"/>
                             <constraint firstItem="2Bw-Ig-R1P" firstAttribute="leading" secondItem="Jhj-wD-27r" secondAttribute="leading" constant="25" id="xbM-v6-fim"/>
                             <constraint firstItem="Jhj-wD-27r" firstAttribute="trailing" secondItem="2Bw-Ig-R1P" secondAttribute="trailing" constant="25" id="zG6-8F-saV"/>
                         </constraints>
@@ -413,9 +388,7 @@
                     <navigationItem key="navigationItem" title="Details" largeTitleDisplayMode="never" id="PKO-dc-xTA"/>
                     <connections>
                         <outlet property="bsLbl" destination="Zzb-Dw-9ap" id="6K9-zI-NfZ"/>
-                        <outlet property="bttnAlbum" destination="syh-tp-8Nt" id="TdA-gO-Jnx"/>
                         <outlet property="bttnPost" destination="Mpg-s2-en1" id="acc-S7-2Tf"/>
-                        <outlet property="bttnToDolist" destination="zKT-Ws-Zcs" id="ZeY-k2-tdL"/>
                         <outlet property="chLbl" destination="aPj-nI-HIl" id="0ht-p7-ubM"/>
                         <outlet property="cityLbl" destination="wCc-jF-xf0" id="qUf-mj-fPZ"/>
                         <outlet property="companyLbl" destination="47L-qG-xQD" id="WRL-nn-Ln3"/>
@@ -433,20 +406,10 @@
             </objects>
             <point key="canvasLocation" x="943" y="458"/>
         </scene>
-        <!--Albums-->
-        <scene sceneID="VHL-MT-uco">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Albums" id="hh2-qm-cSr" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="9Oa-K8-zpp"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="f6d-lD-cei" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1558" y="215"/>
-        </scene>
         <!--Add PostVC-->
         <scene sceneID="aNa-aX-AWz">
             <objects>
-                <viewController id="G3V-oc-FRS" customClass="AddPostVC" customModule="Lesson18" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="G3V-oc-FRS" customClass="AddPostVC" customModule="Lesson24" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ttj-Gw-jso">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -520,7 +483,7 @@
         <!--Comments-->
         <scene sceneID="uPI-Tt-3DI">
             <objects>
-                <tableViewController id="evr-ad-rsv" customClass="CommentsTVC" customModule="Lesson18" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="evr-ad-rsv" customClass="CommentsTVC" customModule="Lesson24" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="wwe-C0-rjd">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -545,7 +508,7 @@
         <!--Posts Table View Controller-->
         <scene sceneID="1K5-jM-k7k">
             <objects>
-                <tableViewController storyboardIdentifier="PostsTableSB" id="RL5-W5-h2x" customClass="PostsTableViewController" customModule="Lesson18" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="PostsTableSB" id="RL5-W5-h2x" customClass="PostsTableViewController" customModule="Lesson24" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="bXC-Lb-iAR">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -573,7 +536,7 @@
         <!--Update CommentVC-->
         <scene sceneID="2X7-oB-myG">
             <objects>
-                <viewController id="7uw-XU-Oos" customClass="UpdateCommentVC" customModule="Lesson18" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="7uw-XU-Oos" customClass="UpdateCommentVC" customModule="Lesson24" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ig0-gB-iVf">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

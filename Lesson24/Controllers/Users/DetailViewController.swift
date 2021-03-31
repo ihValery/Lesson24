@@ -17,8 +17,6 @@ class DetailViewController: UIViewController
     @IBOutlet weak var bsLbl: UILabel!
     @IBOutlet weak var chLbl: UILabel!
 
-    @IBOutlet weak var bttnToDolist: UIButton!
-    @IBOutlet weak var bttnAlbum: UIButton!
     @IBOutlet weak var bttnPost: UIButton!
     
     var user: JSON!
@@ -27,8 +25,6 @@ class DetailViewController: UIViewController
     {
         super.viewDidLoad()
         designButton(button: bttnPost)
-        designButton(button: bttnAlbum)
-        designButton(button: bttnToDolist)
         
         nameLbl.text = user["name"].string
         usernameLbl.text = user["username"].string
@@ -48,12 +44,9 @@ class DetailViewController: UIViewController
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
-        if segue.identifier == "goToPosts",
-           let postsVC = segue.destination as? PostsTableViewController {
+        guard segue.identifier == "goToPosts" else { return }
+        if let postsVC = segue.destination as? PostsTableViewController {
             postsVC.user = user
-        } else if segue.identifier == "goToAlbums",
-                  let albumsVC = segue.destination as? AlbumsTVC {
-            albumsVC.user = user
         }
     }
 }
