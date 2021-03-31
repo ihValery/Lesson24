@@ -25,7 +25,7 @@ class MainViewController: UICollectionViewController
         usersVC.fetchData()
     }
     
-    // MARK: - UICollectionViewDataSource
+    // MARK: - UICollectionView DataSource
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
     {
@@ -40,7 +40,7 @@ class MainViewController: UICollectionViewController
         return cell
     }
 
-    // MARK: - UICollectionViewDelegate
+    // MARK: - UICollectionView Delegate
 
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)
     {

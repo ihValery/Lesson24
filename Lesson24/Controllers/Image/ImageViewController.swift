@@ -32,9 +32,6 @@ class ImageViewController: UIViewController
             .responseImage { [weak self] response in
                 switch response.result {
                     case .success(let image):
-                        
-                        //MARK: - проверку если выйти и не догрузить картинку - краш
-                        
                         isHiddenElements(self!.loadingLabel, self!.activityIndicator, bool: true)
                         self?.progressView.isHidden = true
                         self?.imageView.image = image

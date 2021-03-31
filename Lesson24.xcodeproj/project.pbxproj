@@ -131,7 +131,6 @@
 		2DB599FD25E65F5600654E33 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				80D7B24E25F52BE50002540F /* CacheManager.swift */,
 				2DB59A0625E677D600654E33 /* MainActions */,
 				2DB59A0E25E6781100654E33 /* Image */,
 				2DB59A0A25E677F500654E33 /* Users */,
@@ -175,6 +174,7 @@
 		2DB59A0E25E6781100654E33 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				80D7B24E25F52BE50002540F /* CacheManager.swift */,
 				2DB599E925E6538000654E33 /* ImageViewController.swift */,
 			);
 			path = Image;
